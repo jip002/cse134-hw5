@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 134B HW2</title>
+    <link rel="shorcut icon" type="image/png" href="img/icons8-dog-64.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Personal Portfolio</h1>
+        <h2 id = "subtitle">- CSE 134B -</h2>
+        <div class = "list">
+            <h3>Content List: </h3>
+            <nav class = "nav">
+                <ul id = "content-list">
+                    <li class="item"><a href="#about">About Me</a></li>
+                    <li><a href="#strength">My strength & Weakness</a></li>
+                    <li><a href="#classes">Classes I Took</a></li>
+                    <li><a href="#future">My future plan</a></li>
+                </ul>
+            </nav>  
+        </div>
+    </header>
+    <main>
+        <h2 id="about">About Me</h2>
+        <div class = "about-me">
+            <article class = "words">
+                <p class = "introduction">
+                    I'm a 3rd year <span>Computer Engineering</span> student from South Korea. <br>
+                    I graduated from Bishop Sullivan Catholic High School in Virginia. <br>
+                    Now I'm ready to become a new software engineer.<br>
+                    Here is my <a href="https://github.com/jip002/Lab2_Starter.git" id = "github">Github repository</a> and you can take a look at it anytime!
+                </p>
+    
+                <aside id = "extra-info">
+                    <pre>
+    Extra information:
+    Age: 25
+    Sex: male
+    Nationality: South Korea
+    Family: 2 Parents, 1 older sister, 1 dog
+    Favorite code:
+                    <code id="code">
+        while(isAlive()){
+            me.sleep();
+            me.eat();
+            me.code();
+        }
+                        </code>
+                    </pre>
+                </aside>
+            </article>
+            <picture id = "profile">
+                <source srcset="img/profile-medium.jpg" media="(max-width:760px)">
+                <source srcset="img/profile-low.jpg" media="(max-width:480px)">
+                <img 
+                src="img/profile.JPG" 
+                alt="The profile picture of Jihun Park"
+                decoding="sync"
+                loading="eager"
+                >
+            </picture>
+        </div>
+        
+        <section class="strength">
+            <h2 id="strength">My Strength & Weakness</h2>
+            <div class="details">
+                <details class="snw">
+                    <summary>My strength</summary>
+                    <p class="des">
+                        <strong>Enthusiastic, Perfectionist, Diligent.</strong>
+                    </p>
+                </details>
+                <details class="snw">
+                    <summary>My weakness</summary>
+                    <p class="des">
+                        Lack working experience <em>for now</em>.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <div class = "future-plan">
+            <h2 id="future">My Future Plan</h2>
+        <p>
+            I'm excited to explore various fields of software engineering. <br>
+            I especially eager to be a developer in <b>game</b> industry.<br>
+            I'm also planning to take computer graphing / design related class <br>
+            as I'm very interested in arts and I believe <i>art industry</i> cam boom with the growth of softwares. <br>
+            Thus, here are some of the lists of my possible future career.
+        </p>
+            <ol class="career">
+                <li>Game Developer</li>
+                <li>Software web / security developer</li>
+                <li>Computer graphic designer</li>
+                <li>Software / hardware engineer</li>
+            </ol>
+        </div>
+        <p id="des">Below are some of my artworks I did in highschool</p>
+        <div class = "albumn">
+            <picture class = "pic">
+                <source srcset="img/flower-medium.JPG" media="(max-width:760px)">
+                <source srcset="img/flower-low.JPG" media="(max-width:480px)">
+                <img 
+                src="img/flower.JPG" 
+                alt="A flower oil paint with black background"
+                decoding="async"
+                loading="lazy"
+                height="350px" 
+                width="350">
+            </picture>
+            <picture class = "pic">
+                <source srcset="img/snake-medium.jpg" media="(max-width:760px)">
+                <source srcset="img/snake-low.jpg" media="(max-width:480px)">
+                <img 
+                src="img/snake.jpg" 
+                alt="Drawn picture of a snake with flower-shaped head"
+                decoding="async"
+                loading="lazy"
+                height="350px" 
+                width="350">
+            </picture>
+        </div>
+    </main>
+
+    <footer>
+        <h2>By the end...</h2>
+        <div class = "last">
+            <section class="rating">
+                <p>How would you rate my site?</p>
+                <section class="options">
+                    <input type="radio" id="good" name="rating" value="good">
+                    <label for="good">Good</label><br>
+                    <input type="radio" id="soso" name="rating" value="soso">
+                    <label for="soso">So So</label><br>
+                    <input type="radio" id="not_good" name="rating" value="not good">
+                    <label for="not_good">Not Good</label><br>
+                </section>
+            </section>
+            <form>
+                <fieldset>
+                <legend>Please leave me an email if you're interested!</legend>
+                <input type="text" placeholder="write it here" />
+                <button>Submit</button>
+                <textarea cols="30" rows="3">Any extra comments for me?</textarea>
+                </fieldset>
+            </form>
+        </div>
+        <br>
+        <div id="footnote">&copy; Jihun Park A15583543</div>
+    </footer>
+</body>
+</html>
