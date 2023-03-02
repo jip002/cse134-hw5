@@ -8,4 +8,4 @@ The new "my skills" button will rotate 360 degrees after hover.\
 \
 JS updates:\
 When the introduction sections is clicked (above extra information), the background color will change, and if clicked again, it will switch to its original color.\
-When we click 'my skills' button a popup window will show up along with 'close' button.\
+When we click 'my skills' button a popup window will show up along with 'close' button.
