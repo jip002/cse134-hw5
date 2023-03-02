@@ -1,2 +1,3 @@
 # cse134b-hw3
-a
+Jihun Park\
+A15583543\

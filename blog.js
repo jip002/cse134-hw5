@@ -9,10 +9,6 @@ const title = document.querySelector("#title");
 const date = document.querySelector("#date");
 const summary = document.querySelector("#summary");
 
-const edit_modal = document.querySelector("#edit_modal");
-const edit_save = document.querySelector("#edit_save");
-const edit_cancel = document.querySelector("#edit_cancel");
-
 localStorage.clear();
 let list = getData();
 console.log(localStorage);
@@ -27,9 +23,9 @@ cancel.addEventListener('click', e => {
 });
 
 save.addEventListener('click', e =>{
-    let data = `Blog Title: ${title.value} <br>
-                Blog Data: ${date.value} <br>
-                Blog Summary: ${summary.value} <br>
+    let data = `Blog Title: ${title.value}<br>
+                Blog Data: ${date.value}<br>
+                Blog Summary: ${summary.value}<br>
                 <button id="edit">Edit</button>
                 <button id="delete">Delete</button>`;
     console.log(JSON.stringify(data));
@@ -43,26 +39,9 @@ save.addEventListener('click', e =>{
       remove(data, list);
       updateMain(list);
     });
-
-    const edit = document.querySelector("#edit");
-    del.addEventListener("click", () => {
-      edit_modal.showModal();
-    });
     modal.close();
 });
 
-edit_cancel.addEventListener('click', e => {
-  edit_modal.close();
-});
-
-edit_save.addEventListener('click', e => {
-  let data = `Blog Title: ${edit_title.value} <br>
-                Blog Data: ${edit_date.value} <br>
-                Blog Summary: ${edit_summary.value} <br>
-                <button id="edit">Edit</button>
-                <button id="delete">Delete</button>`;
-  edit_modal.close();
-});
 
 
 }
@@ -96,11 +75,6 @@ export function getData() {
     }
     localStorage.setItem("list",JSON.stringify(array));
     console.log(localStorage);
-  }
-
-  export function start(){
-
-
   }
 
   

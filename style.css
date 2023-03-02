@@ -69,7 +69,7 @@ h2{
     padding-top: 5%;
     padding-bottom: 5%;
     color: var(--text-color);
-    transition: transform 0.5s;
+    transition: transform 0.5s, background-color 0.5s;
     font-size:0.4rem;
 }
 
@@ -82,7 +82,7 @@ h2{
     justify-content: center;
     margin: 20px;
     border-radius: 120px;
-    transition: transform 1s;
+    transition: transform 0.2s;
     width:33vw;
     height:33vh;
 }
@@ -155,6 +155,7 @@ h2{
 
 #extra-info:hover{
     transform:scale(1.15);
+    background-color: rgb(254, 245, 251);
 }
 
 .words{
@@ -176,12 +177,13 @@ h2{
     padding-top: 7%;
     padding-bottom: 7%;
     color: var(--text-color);
-    transition: transform 1s;
+    transition: transform 1s, background-color 1s;
     font-size:1.2rem;
 }
 
 .introduction:hover{
     transform:scale(1.15);
+    background-color: honeydew;
 }
 
 #extra-info{
@@ -193,7 +195,7 @@ h2{
     justify-content: center;
     margin: 20px;
     border-radius: 120px;
-    transition: transform 1s;
+    transition: transform 1s, background-color 1s;
 }
 
 #code{
@@ -236,6 +238,7 @@ h2{
 
 .details:hover .snw{
     transform:rotate(5deg);
+    background-color: rgb(160, 189, 244);
 }
 
 .snw{
@@ -250,7 +253,7 @@ h2{
     border: 5px solid black;
     border-radius:20px;
     transform:rotate(-3deg);
-    transition: transform 0.75s;
+    transition: transform 0.75s, background-color 2s;
 }
 
 .des{
@@ -401,4 +404,67 @@ a{
     text-align: center;
     margin:auto;
     margin-bottom: 25px;
+}
+
+#background{
+    background-color: beige;
+    font-size: 1.2rem;
+    width: 70vw;
+    margin:auto;
+    padding:50px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    border-radius: 45px;
+    text-align: center;
+    line-height: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(26, 114, 118);
+}
+
+#background:hover{
+    background-color: azure;
+    transition: background-color 1000ms linear;
+}
+
+
+#skill:hover{
+    background-color: rgb(247, 117, 143);
+    color:azure;
+    transform:rotate(360deg);
+}
+
+#skill{
+    border:none;
+    background-color: azure;;
+    color:rgb(247, 117, 143);
+    width:200px;
+    height:50px;
+    vertical-align: baseline;
+    text-align: center;
+    border-radius:20px;
+    font-size:2.5rem;
+    margin-bottom: 50px;
+    transition: transform 1s, background-color 0.5s;
+}
+
+#modal{
+    background-color: aliceblue;
+    font-size: 1.2rem;
+    border:none;
+    border-radius: 30px;
+}
+
+#modal ul{
+    margin-right:20px;
+    color:cadetblue
+}
+
+#close{
+    margin:auto;
+    font-size:1.4rem;
+    border:none;
+    background-color: dodgerblue;
+    color:aliceblue;
+    border-radius:15px;
+    margin-left:75px;
 }
