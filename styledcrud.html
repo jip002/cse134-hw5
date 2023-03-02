@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled CRUD</title>
+    <script type="module">
+        import init from './blog.js';
+    </script>
+</head>
+<body>
+    <h1>Blog Post</h1>
+    <button id="add">Add Post</button>
+    <dialog id="modal">
+        Post Title:
+        <input name="Post Title" id="title" type="text"/>
+        <br>
+        Post Date:
+        <input name="Post Date" id="date" type="text"/>
+        <br>
+        Post Summary:
+        <input name="Post Summary" id="summary" type="text"/>
+        <br>
+        <button id="cancel">Cancel</button>
+        <button id="save">Save</button>
+    </dialog>
+    <main></main>
+</body>
+</html>
