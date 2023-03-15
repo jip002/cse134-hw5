@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 1</title>
+    <script type="module">
+        import init from './methods.js';
+    </script>
+    <style>
+        textarea{
+            width:50vw;
+            height:50vh;
+        }
+        #article_body{
+            width:500px;
+            height:100px;
+
+        }
+        form div:nth-child(1){
+            margin:20px;
+            border: 2px solid black;
+            width:200px;
+            padding:20px;
+        }
+        form div:nth-child(2){
+            margin:20px;
+            border: 2px solid black;
+            width:250px;
+            padding:20px;
+        }
+        form div:nth-child(3){
+            margin:20px;
+            border: 2px solid black;
+            width:500px;
+            padding:20px;
+        }
+        button{
+            margin:5px;
+        }
+        #get{
+            margin-left: 20px;
+        }
+        output textarea{
+            margin: 20px;
+            width:50vw;
+            height:60vh;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+            <a href="./methodtest.html">Part 1</a><br>
+            <a href="./webcomponent.html">Part 2</a>
+    </nav>  
+    <form>
+        <div>
+            <label for="id">ID</label>
+            <input type="text" id="id" name="id">
+        </div>
+        <div>
+            <label for="article_name">Article Name</label>
+            <input type="text" id="article_name" name="article_name">
+        </div>
+        <div>
+            <label for="article_body">Article Body</label>
+            <textarea id="article_body" name="article_body"></textarea>
+        </div>
+        <input type="hidden" name="date">
+    </form>
+    <button name="get" id="get">GET</button>
+    <button name="post" id="post">POST</button>
+    <button name="put" id="put">PUT</button>
+    <button name="delete" id="delete">DELETE</button>
+    <br>
+    <output id="response"></output>
+</body>
+</html>

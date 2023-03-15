@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ButtonCount</title>
+    <script defer src="ButtonCount.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', init);
+        function init() {
+            const button = document.querySelector('button-count');
+            button.addEventListener('click', e =>{
+                button.count += 1;
+                let shadow = button.shadowRoot;
+                let btn = shadow.querySelector("button");
+                btn.innerHTML=`Times Clicked : ${button.count}`;
+            });
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="./methodtest.html">Part 1</a><br>
+        <a href="./webcomponent.html">Part 2</a>
+    </nav><br>
+    <button-count></button-count>
+</body>
+</html>
